@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Project</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ID Card Maker -->
+<main class="page-wrapper">
+  <div class="form-container">
+    <h1>Let's Create an ID card!</h1>
+    <form id="id-card-form">
+      <div>
+        <label for="name">First Name</label><br>
+        <input type="name" placeholder="First Name" id="first-name" required>
+        <br>
+      </div>
+
+      <div>
+        <label for="name">Last Name</label><br>
+        <input type="name" placeholder="Last Name" id="last-name" required>
+        <br>
+      </div>
+
+      <div>
+        <label for="name">Age</label><br>
+        <input type="integer" placeholder="Age" id="age" required>
+      </div>
+
+      <div>
+        <label for="phone number">Phone Number</label><br>
+        <input type="integer" placeholder="Phone Number" id="phone-number" required>
+      </div>
+
+      <div>
+        <label for="address">Address</label><br>
+        <input type="text" placeholder="Address" id="address" required>
+      </div>
+      
+      <button type="button" onclick="idCard()">Get ID Card!</button>
+    </form>
+  </div>
+
+  <!-- ID Card -->
+  <div id="idCard">
+    <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+    
+    <p id="postFullName"></p>
+    
+    <div class="info">
+      <p id="postAge">Age: </p>
+      
+      <p id="postPhoneNumber">Phone Number: </p>
+      
+      <p id="postAddress">Street Address: </p>
+    </div>
+    
+    </div>
+</main>
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
